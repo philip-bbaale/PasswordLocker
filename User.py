@@ -12,14 +12,14 @@ class Users:
 
     def save_user_account(self):
         Users.userLogin_list.append(self)
-'''
+
     @classmethod
     def user_account_exists(cls,username):
         for user in cls.userLogin_list:
             if user.username == username:
                 return True
         return False
-
+'''
     @classmethod
     def display_user_accounts(cls):
         return cls.userLogin_list
