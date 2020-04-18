@@ -10,10 +10,10 @@ def save_user_account(User):
 
 def check_existing_user_account(username):
     return Users.user_account_exists(username)
-'''
+
 def display_user_accounts():
     return Users.display_user_accounts()
-
+'''
 def main():
     print ("Hi there, Welcome to Password Locker. A safe place to store all your passwords")
     print ("What is your username")
