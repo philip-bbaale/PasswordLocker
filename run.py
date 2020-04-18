@@ -59,11 +59,11 @@ def main():
                 print('\n')
                 print("You dont seem to have any Account information yet")
                 print('\n')
-'''
+
         elif short_code == "ex":
                 print("Thank you for trusting us!")
                 break
-
+'''
         else:
                 print("I really didn't get that. Please use the short codes")
 
