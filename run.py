@@ -13,7 +13,7 @@ def check_existing_user_account(username):
 
 def display_user_accounts():
     return Users.display_user_accounts()
-'''
+
 def main():
     print ("Hi there, Welcome to Password Locker. A safe place to store all your passwords")
     print ("What is your username")
@@ -21,7 +21,7 @@ def main():
     print ("Please input your password")
     user_password = input()
     print (f"Hello {user_name} \n Your password is {user_password}")
-
+'''
     while True:
         print("Use these short codes : nw - Create a new account locker., dp - Display account lockers.,  ex - Exit Password Locker.  ")
 
