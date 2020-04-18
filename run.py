@@ -21,12 +21,12 @@ def main():
     print ("Please input your password")
     user_password = input()
     print (f"Hello {user_name} \n Your password is {user_password}")
-'''
+
     while True:
         print("Use these short codes : nw - Create a new account locker., dp - Display account lockers.,  ex - Exit Password Locker.  ")
 
         short_code = input().lower()
-
+'''
         if short_code == 'nw':
             print("New Account Locker")
             print("-"*10)
