@@ -26,7 +26,7 @@ def main():
         print("Use these short codes : nw - Create a new account locker., dp - Display account lockers.,  ex - Exit Password Locker.  ")
 
         short_code = input().lower()
-'''
+
         if short_code == 'nw':
             print("New Account Locker")
             print("-"*10)
@@ -44,7 +44,7 @@ def main():
             print ('\n')
             print(f"New Contact {accountType} {username} created")
             print ('\n')
-
+'''
         elif short_code == 'dp':
 
             if display_user_accounts():
