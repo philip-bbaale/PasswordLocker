@@ -1,7 +1,7 @@
 import unittest
 from User import Users
 
-class TestUser(unittest.TestCase):'''
+class TestUser(unittest.TestCase):
     def setUp(self):
         self.newlogin = Users("pipbbaale","2001","putlocker")
 
@@ -9,7 +9,7 @@ class TestUser(unittest.TestCase):'''
         self.assertEqual(self.newlogin.username,"pipbbaale")
         self.assertEqual(self.newlogin.password,"2001")
         self.assertEqual(self.newlogin.accountType,"putlocker")
-
+'''
     def test_save_user_account(self):
         self.newlogin.save_user_account()
         self.assertEqual(len(Users.userLogin_list),1)
