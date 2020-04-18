@@ -44,7 +44,7 @@ def main():
             print ('\n')
             print(f"New Contact {accountType} {username} created")
             print ('\n')
-'''
+
         elif short_code == 'dp':
 
             if display_user_accounts():
@@ -59,7 +59,7 @@ def main():
                 print('\n')
                 print("You dont seem to have any Account information yet")
                 print('\n')
-
+'''
         elif short_code == "ex":
                 print("Thank you for trusting us!")
                 break
