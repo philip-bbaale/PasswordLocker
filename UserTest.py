@@ -29,7 +29,7 @@ class TestUser(unittest.TestCase):
         test_user.save_user_account()
         user_account_exists = Users.user_account_exists("namesusing")
         self.assertTrue(user_account_exists)
-'''
+
     def test_display_users_acounts(self):
         self.assertEqual(Users.display_user_accounts(),Users.userLogin_list)
 
