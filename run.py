@@ -1,10 +1,10 @@
 #!/usr/bin/env python3
 from User import Users
-'''
+
 def create_user_account(username,password,accountType):
     new_user_account = Users(username,password,accountType)
     return new_user_account
-
+'''
 def save_user_account(User):
     User.save_user_account()
 
