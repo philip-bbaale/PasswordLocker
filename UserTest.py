@@ -9,11 +9,11 @@ class TestUser(unittest.TestCase):
         self.assertEqual(self.newlogin.username,"pipbbaale")
         self.assertEqual(self.newlogin.password,"2001")
         self.assertEqual(self.newlogin.accountType,"putlocker")
-'''
+
     def test_save_user_account(self):
         self.newlogin.save_user_account()
         self.assertEqual(len(Users.userLogin_list),1)
-
+'''
     def tearDown(self):
         Users.userLogin_list = []
 
