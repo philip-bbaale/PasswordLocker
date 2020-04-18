@@ -7,10 +7,10 @@ def create_user_account(username,password,accountType):
 
 def save_user_account(User):
     User.save_user_account()
-'''
+
 def check_existing_user_account(username):
     return Users.user_account_exists(username)
-
+'''
 def display_user_accounts():
     return Users.display_user_accounts()
 
