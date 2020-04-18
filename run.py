@@ -1,18 +1,18 @@
 #!/usr/bin/env python3
-from User import Users
+from User import Credentials
 
 def create_user_account(username,password,accountType):
-    new_user_account = Users(username,password,accountType)
+    new_user_account = Credentials(username,password,accountType)
     return new_user_account
 
 def save_user_account(User):
     User.save_user_account()
 
 def check_existing_user_account(username):
-    return Users.user_account_exists(username)
+    return Credentials.user_account_exists(username)
 
 def display_user_accounts():
-    return Users.display_user_accounts()
+    return Credentials.display_user_accounts()
 
 def main():
     print ("Hi there, Welcome to Password Locker. A safe place to store all your passwords")
@@ -51,8 +51,8 @@ def main():
                 print("Here is a list of all your Accounts details")
                 print('\n')
 
-                for Users in display_user_accounts():
-                        print(f" Account type: {Users.accountType}\n Username: {Users.username} \n Password: {Users.password}")
+                for Credentials in display_user_accounts():
+                        print(f" Account type: {Credentials.accountType}\n Username: {Credentials.username} \n Password: {Credentials.password}")
 
                 print('\n')
             else:

@@ -1,4 +1,4 @@
-class Users:
+class Credentials:
     """
     Class that generates new instances of usersLogin.
     """
@@ -11,7 +11,7 @@ class Users:
         self.accountType = accountType
 
     def save_user_account(self):
-        Users.userLogin_list.append(self)
+        Credentials.userLogin_list.append(self)
 
     @classmethod
     def user_account_exists(cls,username):
@@ -23,3 +23,5 @@ class Users:
     @classmethod
     def display_user_accounts(cls):
         return cls.userLogin_list
+
+class User:
