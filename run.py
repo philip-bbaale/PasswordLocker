@@ -34,7 +34,7 @@ def main():
 
             print ("Account Username")
             username = input()
-'''
+
             print("Would you like to generate Account password (y/n)")
             answer = input().lower()
             if answer =='y':
