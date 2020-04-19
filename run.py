@@ -15,6 +15,9 @@ def check_existing_user_account(username):
 def display_user_accounts():
     return Credentials.display_user_accounts()
 
+def delete_user_account(User):
+    User.delete_user_account()
+
 def main():
     print ("Hi there, Welcome to Password Locker. A safe place to store all your passwords")
     print ("What is your username")

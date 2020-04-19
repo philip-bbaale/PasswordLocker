@@ -33,6 +33,15 @@ class TestUser(unittest.TestCase):
     def test_display_users_acounts(self):
         self.assertEqual(Credentials.display_user_accounts(),Credentials.userLogin_list)
 
+    def test_delete_user_account(self):
+        self.newlogin.save_user_account()
+        test_user = Credentials("namesusing","passusing","accountusing")
+        test_user.save_user_account()
+
+        self.newlogin.delete_user_account()
+        self.assertEqual(len(Credentials.userLogin_list),1)
+
+
 
 
 if __name__ == '__main__':
