@@ -15,8 +15,8 @@ def check_existing_user_account(username):
 def display_user_accounts():
     return Credentials.display_user_accounts()
 
-def delete_user_account(User):
-    User.delete_user_account()
+def delete_user_account(Credentials):
+    Credentials.delete_user_account()
 
 def main():
     print ("Hi there, Welcome to Password Locker. A safe place to store all your passwords")
@@ -27,7 +27,7 @@ def main():
     print (f"Hello {user_name} \n Your password is {user_password}")
 
     while True:
-        print("Use these short codes : nw - Create a new account locker., dp - Display account lockers.,  ex - Exit Password Locker.  ")
+        print("Use these short codes : nw - Create a new account locker., dp - Display account lockers., dt - Delete Account., ex - Exit Password Locker.  ")
 
         short_code = input().lower()
 
@@ -76,6 +76,15 @@ def main():
                 print('\n')
                 print("You dont seem to have any Account information yet")
                 print('\n')
+
+        elif short_code == "dt":
+            print("Which account do you want to delete")
+            deleteAccount = input()
+            if deleteAccount == accountType:
+                delete_user_account(Credentials)
+
+            else:
+                print("Didn't find user account")
 
         elif short_code == "ex":
                 print("Thank you for trusting us!")
