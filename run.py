@@ -1,5 +1,6 @@
 #!/usr/bin/env python3
 from User import Credentials
+import random
 
 def create_user_account(username,password,accountType):
     new_user_account = Credentials(username,password,accountType)
@@ -33,9 +34,22 @@ def main():
 
             print ("Account Username")
             username = input()
+'''
+            print("Would you like to generate Account password (y/n)")
+            answer = input().lower()
+            if answer =='y':
+                chars = 'abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ!@£$%^&*().,?0123456789'
+                number = 1
+                length = input('password length?')
+                length = int(length)
+                for pwd in range(number):
+                    password = ''
+                    for c in range(length):
+                        password += random.choice(chars)
 
-            print("Account password")
-            password = input()
+            elif answer == 'n':
+                print("Input Account password")
+                password = input()
 
             print("Account type")
             accountType = input()
@@ -53,7 +67,7 @@ def main():
 
                 for Credentials in display_user_accounts():
                         print(f" Account type: {Credentials.accountType}\n Username: {Credentials.username} \n Password: {Credentials.password}")
-
+                        print('\n')
                 print('\n')
             else:
                 print('\n')

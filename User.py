@@ -24,4 +24,7 @@ class Credentials:
     def display_user_accounts(cls):
         return cls.userLogin_list
 
-class User:
+class Users:
+    def __init__(self,login_username,login_password):
+        self.login_username = login_username
+        self.login_password = login_password
